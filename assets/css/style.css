@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* color-pallete */
+    --clr-dark-100:rgb(57, 62, 70);
+    --clr-dark-200:rgb(34, 40, 49);
+
+    --clr-teal-0:rgb(0, 242, 255);
+    --clr-teal-50:rgb(0, 199, 209);
+    --clr-teal-100:rgb(0, 173, 181);
+    --clr-teal-200:rgb(0, 137, 145);
+    --clr-teal-300:rgb(0, 111, 117);
+    --clr-teal-400:rgb(0, 88, 92);
+    --clr-teal-500:rgb(0, 63, 66);
+
+    --clr-light-100:rgb(238, 238, 238);
+    --clr-light-200:rgb(215, 214, 214);
+
+    /* font */
+    --fnt-Montserrat:"Montserrat", sans-serif;
+
+    /* font-weight */
+    --fw-thin-100:100;
+    --fw-thin-200:300;
+
+    --fw-regular:400;
+
+    --fw-bold-100:500;
+    --fw-bold-200:700;
+    --fw-bold-300:900;
+
+    /* font-size */
+    --fz-sm:.5em;
+    --fz-normal:1rem;
+    --fz-l:1.5rem;
+    --fz-xl:2rem;
+}
+
+body {
+    font-family: var(--fnt-Montserrat);
+    font-size: var(--fz-normal);
+    background-color: var(--clr-light-100);
+}
+
+.navbar {
+    background-color: var(--clr-teal-50);
+}
+
+main {
+    background-color: var(--clr-dark-100);
+    color: var(--clr-light-100);
+}
+
+main .hero .hero-body .ta-justify {
+    text-align: justify;
+}
+
+main .film-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .card {
+    width: 13rem;
+    box-shadow: 3px 3px 5px var(--clr-dark-200);
+}
+
+main .card img {
+    object-fit: cover;
+}
+
+main .card .btn {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 100px;
+}
+
+main .card .btn img {
+    width: 1.5rem;
+}
+
+main .card .card-body {
+    background-color: var(--clr-light-100);
+}
+
+.w-5 {
+    width: 5rem;
+}
+
+footer .l-space {
+    letter-spacing: .3rem;
+    opacity: .65;
+    color: var(--clr-dark-100);
+}
+
+footer {
+    background-color: var(--clr-teal-50);
+}
